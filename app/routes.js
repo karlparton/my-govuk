@@ -41,4 +41,10 @@ router.get('/examples/over-18', function (req, res) {
 
 // add your routes here
 
+// router.get('/tutorials/tutorial-1/question-page-2', function (req, res) {
+
+//   res.render('/tutorials/tutorial-1/question-page-2', { 'name' : 'Foo' });
+
+// });
+
 module.exports = router;

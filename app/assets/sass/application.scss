@@ -39,3 +39,95 @@
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+#global-breadcrumb {
+    background-color: #fff;
+    max-width: 1020px;
+    margin: 0 auto;
+    z-index: 50;
+}
+
+#global-breadcrumb ol {
+      max-width: 960px;
+      margin: 0 30px;
+      padding: 0.75em 0;
+}
+
+#global-breadcrumb ol li {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.14286;
+    font-weight: 400;
+    text-transform: none;
+    background-image: url(https://assets.digital.cabinet-office.gov.uk/static/separator-871ef28abf1920b1b8050934ebec4366c18e3cba6ddb704392935e076a7e744d.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    float: left;
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    padding-right: 1em;
+}
+
+.group:before, .group:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.group:after {
+    clear: both;
+}
+
+aside {
+    z-index: 10;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+aside .page-navigation ol {
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline;
+    overflow: hidden;
+    width: 50%;
+}
+
+aside .page-navigation li {
+    list-style: none;
+    list-style-position: outside;
+    margin-right: 0.75em;
+    // margin-left: 1.5em;
+    clear: left;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+aside .page-navigation li.active {
+    padding: 0.25em 0.25em 0.25em 0;
+}
+
+aside .page-navigation li a {
+    display: block;
+    padding: 0.25em 1em 0.25em 0;
+}
+
+aside .show-all-parts {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 3.46154;
+    font-weight: 400;
+    text-transform: none;
+    border: solid 1px #bfc1c3;
+    border-width: 1px 0;
+    padding: 0 16px;
+    display: none;
+}
