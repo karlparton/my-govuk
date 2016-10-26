@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/examples/">Back</a>
+
+      <h1 class="heading-large">
+        Can you juggle more than two balls?
+      </h1>
+
+      <form class="form" action="question-page-2">
+        <fieldset class="inline">
+
+          <legend class="visuallyhidden">Do you already have a personal user account?</legend>
+
+          <label class="block-label" for="radio-inline-1">
+            <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+            Yes
+          </label>
+          <label class="block-label" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+            No
+          </label>
+
+        </fieldset>
+
+      <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
