@@ -1,46 +1,14 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express')
+var router = express.Router()
 
+// Route index page
 router.get('/', function (req, res) {
-  
-  res.render('index');
-
-});
-
-
-// Example routes - feel free to delete these
-
-// Passing data into a page
-
-router.get('/examples/template-data', function (req, res) {
-
-  res.render('examples/template-data', { 'name' : 'Foo' });
-
-});
-
-// Branching
-
-router.get('/examples/over-18', function (req, res) {
-
-  // get the answer from the query string (eg. ?over18=false)
-  var over18 = req.query.over18;
-
-  if (over18 == "false"){
-
-    // redirect to the relevant page
-    res.redirect("/examples/under-18");
-
-  } else {
-
-    // if over18 is any other value (or is missing) render the page requested
-    res.render('examples/over-18');
-
-  }
-
-});
+  res.render('index')
+})
 
 // add your routes here
 
+<<<<<<< HEAD
 // router.get('/tutorials/tutorial-1/question-page-2', function (req, res) {
 
 //   res.render('/tutorials/tutorial-1/question-page-2', { 'name' : 'Foo' });
@@ -48,3 +16,6 @@ router.get('/examples/over-18', function (req, res) {
 // });
 
 module.exports = router;
+=======
+module.exports = router
+>>>>>>> fb45d4fe0a6b972ec5d2d027ea5828f59d853324
