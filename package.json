@@ -41,5 +41,8 @@
     "serve-favicon": "2.3.0",
     "standard": "^7.1.2",
     "sync-request": "^3.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
